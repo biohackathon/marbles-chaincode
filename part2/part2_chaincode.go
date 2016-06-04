@@ -38,8 +38,7 @@ var marbleIndexStr = "_marbleindex"				//name for the key/value that will store 
 var openTradesStr = "_opentrades"				//name for the key/value that will store all open trades
 
 type SensorEvent struct{
-	DataType int `json:"datatype"`
-	// Possible datatypes: Blood Pressure etc. 
+	DataType int `json:"datatype"`		// Possible datatypes: Blood Pressure etc. 
 	Value int `json:"value"`
 	UserID int `json:"uid"`
 }
