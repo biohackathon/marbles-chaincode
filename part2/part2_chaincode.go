@@ -37,6 +37,13 @@ type SimpleChaincode struct {
 var marbleIndexStr = "_marbleindex"				//name for the key/value that will store a list of all known marbles
 var openTradesStr = "_opentrades"				//name for the key/value that will store all open trades
 
+type SensorEvent struct{
+	DataType int `json:"datatype"`
+	// Possible datatypes: Blood Pressure etc. 
+	Value int `json:"value"`
+	UserID int `json:"uid"`
+}
+
 type Marble struct{
 	Name string `json:"name"`					//the fieldtags are needed to keep case from bouncing around
 	Color string `json:"color"`
